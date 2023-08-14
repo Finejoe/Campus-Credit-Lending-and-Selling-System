@@ -1,0 +1,8 @@
+channel-service:
+  group-id: 1 # sdk实际连接的群组
+
+config-toml:
+  config-path: classpath:config.toml
+
+contract-address:
+  kVRs: "0xa2721bb946ceef9284eee6e201df04300f514749"
