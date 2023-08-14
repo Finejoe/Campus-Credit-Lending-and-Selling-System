@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class = "container">
+    <view>
+    
+    <button class = "btn1"  type = "primary" catchtap = "bindgotoform"> 借条生成 </button>
+    </view>
+    <button class = "btn2"  type = "primary"> 跳骚市场 </button>
+</view>
+

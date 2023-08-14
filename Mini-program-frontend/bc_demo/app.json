@@ -1,0 +1,43 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/signature/signature",
+        "pages/logs/logs",
+        "pages/createform/createform",
+        "pages/createform2/createform2",
+        "pages/createform2/readprotocol",
+        "pages/createover/createover",
+        "pages/usercenter/usercenter",
+        "pages/stubind/stubind",
+        "pages/viewiou/viewiou",
+        "pages/viewiou/viewimg",
+        "pages/usercenter/aboutus"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#00B26A",
+        "navigationBarTitleText": "IOU",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "/resources/images/sy_w.png",
+                "selectedIconPath": "/resources/images/sy.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/usercenter/usercenter",
+                "iconPath": "/resources/images/zx_w.png",
+                "selectedIconPath": "/resources/images/zx.png",
+                "text": "个人中心"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    },
+    "sitemapLocation": "sitemap.json"
+}

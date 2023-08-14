@@ -1,0 +1,118 @@
+@import '/utils/flex.wxss';
+
+page{background:#F4F4F4;}
+/*文本对象: 会议室A*/
+.text38{font-size:38rpx;font-weight:bold ;color:#6F727A;line-height:100%;margin-left:47rpx;}
+
+/*SVG图标*/
+.icon{margin-right:20rpx;width:42rpx;height:auto;font-size:0rpx;}
+
+/*SVG图标*/
+.icon_1{margin-right:58rpx;width:50rpx;height:auto;font-size:0rpx;}
+
+/*编辑框的提示*/
+.phc{color:RGBA(0,0,0,0.3);}
+
+.input-icon-504a9b8300caec86228e{width:35rpx;height:auto;margin-right:10rpx;}
+
+/*文本对象: 已完成*/
+.text30{font-size:30rpx;font-weight:bold ;color:#FFFFFF;line-height:100%;margin-left:0rpx;margin-top:20rpx;}
+
+/*文本对象: 1*/
+.text22{font-size:22rpx;font-weight:bold ;color:#BAC7D7;line-height:100%;}
+
+/*文本对象: 08:00-08:30*/
+.text24{font-size:24rpx;font-weight:normal;color:RGBA(255,255,255,0.8);line-height:100%;margin-top:11rpx;margin-left:115rpx;}
+
+/*文本对象: 2*/
+.text22_1{font-size:22rpx;font-weight:bold ;color:#3082FF;line-height:100%;line-height:100%;}
+
+/*文本对象: 3*/
+.text22_2{font-size:22rpx;font-weight:bold ;color:#3FC5F1;line-height:100%;line-height:100%;}
+
+
+/*文本对象: 09:30-10:00*/
+.text28{font-size:28rpx;font-weight:normal;color:#CCCCCC;line-height:100%;margin-left:0rpx;margin-top:0rpx;}
+
+/*文本对象: #01*/
+.text28_1{font-size:28rpx;font-weight:normal;color:#3082FF;line-height:100%;margin-right:0rpx;margin-top:5rpx;}
+
+/*文本对象: 新产品调研会议*/
+.text38_1{font-size:28rpx;font-weight:bold ;color:#535660;line-height:100%;margin-top:17rpx;margin-left:35rpx;}
+
+/*文本对象 */
+.text28_2{font-size:28rpx;font-weight:normal;color:#AAAAAA;line-height:100%;margin-left:4rpx;}
+
+/*文本对象: 参与人*/
+.text26{font-size:26rpx;font-weight:normal;color:#AAAAAA;line-height:100%;margin-right:23rpx;}
+
+/*SVG图标*/
+.icon_2{margin-right:0rpx;width:40rpx;height:auto;font-size:0rpx;}
+
+/*矩形*/
+.rect{width:750rpx;height:180rpx;background:#F4F4F4;border-radius:0rpx;box-sizing:border-box;}
+
+.bottombar{width:750rpx;height:120rpx;padding-top:11rpx;padding-bottom:9rpx;box-sizing:border-box;background:#FFFFFF;border-radius:0rpx;border-top:1rpx solid rgb(241, 241, 241);box-sizing:border-box;position:fixed;width:100%;z-index:1;bottom:0rpx;left:0rpx;}
+
+/*SVG图标*/
+.bottombar .icon-bottombar_home{width:40rpx;height:auto;font-size:0rpx;}
+
+/*文本对象: 会议*/
+.bottombar .text26_1{font-size:26rpx;font-weight:normal;color:#3785F9;line-height:100%;margin-top:12rpx;}
+
+/*SVG图标*/
+.bottombar .icon-bottombar_category{width:36rpx;height:auto;font-size:0rpx;}
+
+/*文本对象: 预约*/
+.bottombar .text26_2{font-size:26rpx;font-weight:normal;color:#B7C7D5;line-height:100%;margin-top:14rpx;}
+
+/*SVG图标*/
+.bottombar .icon-bottombar_gift{width:40rpx;height:auto;font-size:0rpx;}
+
+/*文本对象: 消息*/
+.bottombar .text26_3{font-size:26rpx;font-weight:normal;color:#B7C7D5;line-height:100%;margin-top:12rpx;}
+
+/*SVG图标*/
+.bottombar .icon-bottombar_discover{width:44rpx;height:auto;font-size:0rpx;}
+
+/*文本对象: 管理*/
+.bottombar .text26_4{font-size:26rpx;font-weight:normal;color:#B7C7D5;line-height:100%;margin-top:10rpx;}
+
+/*SVG图标*/
+.bottombar .icon-bottombar_usercenter{width:40rpx;height:auto;font-size:0rpx;}
+
+.topchoose{
+    width:207rpx;border-radius:5rpx;margin-left:32rpx;padding:17rpx 0 28rpx 0;
+}
+.toptext{
+    width:148rpx;height:50rpx;box-sizing:border-box;margin-left:120rpx;padding:0;
+}
+.topnum{
+    width:48rpx;background:RGBA(255,255,255,0.5);border-top-left-radius:30rpx;border-top-right-radius:0rpx;border-bottom-right-radius:0rpx;border-bottom-left-radius:30rpx;height:32rpx;margin:0 0 0 10rpx;
+}
+.topnum_choose{
+    width:48rpx;background:RGBA(0,178,106);border-top-left-radius:30rpx;border-top-right-radius:0rpx;border-bottom-right-radius:0rpx;border-bottom-left-radius:30rpx;height:32rpx;margin:0 0 0 10rpx;
+}
+.text_choose{
+    font-size:22rpx;font-weight:bold ;color:rgb(210,105,30);line-height:100%;
+}
+.topview{
+    width:750rpx;height:145rpx;box-sizing:border-box;background:none;border-radius:0rpx;margin:0 0 0 0;padding:0 0 14rpx 0;position: fixed; top: 0; z-index: 30;
+}
+.showborder{
+    width:680rpx;background:#FFFFFF;border-radius:8rpx;margin:24rpx 0 0 35rpx;padding:23rpx 0 15rpx 0;
+}
+.showbrrtime{
+    width:626rpx;box-sizing:border-box;margin-left:35rpx;padding:0;
+}
+.showbackborder{
+    width:620rpx;height:50rpx;box-sizing:border-box;margin:14rpx 0 0 38rpx;padding:0;
+}
+.binbroder{
+    width:375rpx;background:rgb(0,178,106);border-radius:5rpx;margin-left:0rpx;padding:0rpx 0 28rpx 0;
+    border-style: solid;border-width: 0 0 5px 0;border-color: rgb(235, 104, 191);
+}
+.binbroder_bttom{
+    width:375rpx;background:rgb(0,178,106);border-radius:5rpx;margin-left:0rpx;padding:0rpx 0 28rpx 0;
+    border-style: solid;border-width: 0 0 5px 0;border-color: rgb(214, 214, 214);
+}

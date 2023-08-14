@@ -1,0 +1,37 @@
+/* pages/stubind/stubind.wxss */
+@import '/utils/flex.wxss';
+
+page{background:#F4F4F4;}
+/*文本对象: 注册账号*/
+.text40{font-size:40rpx;font-weight:bold ;color:#222;line-height:100%;}
+
+/*文本对象: 请保存好您创建的账号和密码*/
+.text28{font-size:28rpx;font-weight:normal;color:#AAAAAA;line-height:100%;}
+
+/*SVG图标*/
+.icon{margin-left:57rpx;width:34rpx;height:auto;font-size:0rpx;}
+
+/*编辑框的提示*/
+.phc{color:rgba(0, 178, 106,0.3);}
+
+/*编辑框*/
+.myinput{margin-left:12rpx;width:400rpx;height:70rpx;background:none;color:rgb(0, 178, 106);font-size:32rpx;border-radius:6rpx;box-sizing:border-box;padding:0rpx 10rpx 0rpx 30rpx;}
+
+/*SVG图标*/
+.icon_1{margin-left:53rpx;width:36rpx;height:auto;font-size:0rpx;}
+
+/*编辑框的提示*/
+.phc_1{color:rgba(0,0,0,0.3);}
+
+/*编辑框*/
+.myinput_1{margin-left:15rpx;width:400rpx;height:70rpx;background:none;color:rgb(0, 0, 0);font-size:28rpx;border-radius:6rpx;box-sizing:border-box;padding:0rpx 10rpx 0rpx 30rpx;}
+
+/*SVG图标*/
+.icon_2{margin-left:54rpx;width:34rpx;height:auto;font-size:0rpx;}
+
+/*编辑框*/
+.myinput_2{margin-left:16rpx;width:400rpx;height:70rpx;background:none;color:rgb(0, 0, 0);font-size:28rpx;border-radius:6rpx;box-sizing:border-box;padding:0rpx 10rpx 0rpx 30rpx;}
+
+.button{width:600rpx;height:100rpx;color:rgb(253, 253, 253);font-size:30rpx;border-radius:50rpx;background:#00b26a;font-weight:bold;display:flex;align-items:center;box-sizing:border-box;padding:0rpx 40rpx 0rpx 40rpx;justify-content:center;text-align:center;}
+
+.button:active{background:#2ab200;}

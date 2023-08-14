@@ -1,0 +1,6 @@
+<!--pages/usercenter/aboutus.wxml-->
+
+    <view>
+    <button class = "btn"  type = "primary" style="width: {{screamW}}rpx; height: {{screamH}}rpx;line-height: {{screamH}}rpx;" > 关于宇宙机学生组队打本这件事 </button>
+    </view>
+

@@ -1,0 +1,32 @@
+<!--pages/createover/createover.wxml-->
+<page-meta root-font-size="system" />
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="msg">
+        <view class="msg__icon-area"><text class="weui-icon-success weui-icon_msg"></text></view>
+        <view class="msg__text-area">
+            <view>
+                <h2 class="msg__title">操作成功</h2>
+            </view>
+            <view>
+                <image mode="aspectFit" class="img-wss" src='{{imgpath}}'></image>
+            </view>
+        </view>
+        <view class="weui-msg__opr-area">
+            <view class="weui-btn-area">
+                <view class="weui-btn weui-btn_primary" aria-role="button" bindtap="saveimgtophone">保存借条
+                </view>
+            </view>
+        </view>
+        <view class="weui-msg__tips-area">
+            <view class="weui-msg__tips">借条已上传数据库，为了保障安全性，建议本地保存</view>
+            <view class="weui-msg__tips" wx:if="{{upblock}}" >借条已成功上传区块链，该借条的magic number为：{{magicid}},可为后续取证提供便利</view>
+            <view class="weui-msg__tips" wx:else >因未知原因借条未成功上传区块链，请稍后与技术人员联系</view>
+        </view>
+        <view class="weui-msg__extra-area">
+            <view class="weui-footer">
+
+                <view class="weui-footer__text">Copyright &copy; 2021-2022 xfbxg</view>
+            </view>
+        </view>
+    </view>
+</view>

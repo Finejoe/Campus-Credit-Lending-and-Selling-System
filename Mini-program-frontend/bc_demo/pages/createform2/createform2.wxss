@@ -1,0 +1,68 @@
+/* pages/createform2/createform2.wxss */
+.image_hx{
+    align-items: center;
+    margin-left: 30%;
+    transform: rotate(270deg);
+    height: 100rpx;
+    width: 90rpx;
+}
+.hidecanvas{
+    position: fixed;
+    left:100%
+}
+.hight-sol{
+    height: 140rpx;
+}
+.backgroud-float {
+    /* background-color: #898989; */
+    height: 100%;
+    width: 94%;
+    margin-top: 3%;  
+    margin-left: 3%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+  }
+  .textcss{
+    text-indent: 60rpx;
+    text-align: left;
+  }
+  .solidhalf{
+      width : 50%;
+  }
+  .imglocation{
+    align-items: left;
+    display: flex;
+  }
+ .toptext{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0 22px;
+ }
+ .form__control-area {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 24px 0 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.control-area {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 24px 0 20px;
+}
+.gdsize{
+    height: 80px;
+}
+.pall{
+    display: flex;
+}
+.rightdate{
+    text-align: right;
+    margin-right: 10%;
+}
+/*
+    这键盘还算不错，静音效果还算是可以，总的来说没啥问题，希望不会出现什么傻逼事情好吧
+*/

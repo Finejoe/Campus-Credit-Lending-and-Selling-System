@@ -1,0 +1,119 @@
+<!------------------------------------------------------------------------->
+<view class="topview" >
+  <view class='flex-row-start-center'>
+    <view class="binbroder" bindtap="chose_card1" wx:if="{{chwhich == 1}}">
+      <view class='flex-column '>
+        <view class='toptext'>
+          <view class='flex-row'>
+            <p class='text30'>已借入</p>
+          </view>
+        </view>
+        <p class='text24'>我借入的</p>
+      </view>
+    </view>
+    <view class="binbroder_bttom" bindtap="chose_card1" wx:else>
+      <view class='flex-column '>
+        <view class='toptext'>
+          <view class='flex-row'>
+            <p class='text30'>已借入</p>
+          </view>
+        </view>
+        <p class='text24'>我借入的</p>
+      </view>
+    </view>
+    <view class="binbroder" bindtap="chose_card2" wx:if="{{chwhich == 2}}">
+      <view class='flex-column'>
+        <view class='toptext'>
+          <view class='flex-row'>
+            <p class='text30'>已借出</p>
+          </view>
+        </view>
+        <p class='text24'>我借出的</p>
+      </view>
+    </view>
+    <view class="binbroder_bttom" bindtap="chose_card2" wx:else>
+      <view class='flex-column'>
+        <view class='toptext'>
+          <view class='flex-row'>
+            <p class='text30'>已借出</p>
+          </view>
+        </view>
+        <p class='text24'>我借出的</p>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!------------------------------------------------------------------------->
+<view>
+<!--加上滚动窗-->
+<scroll-view scroll-y="true" style="height: auto; margin-top: 140rpx;" wx:if="{{chwhich == 1}}">
+  <view class="showborder" wx:for="{{brrin}}" >
+    <view class='flex-column'>
+      <view class="showbrrtime">
+        <view class='flex-row-sb-start'>
+          <p class='text28'>{{item.brrowdate}}</p>
+          <!--借款时间-->
+          <p class='text28_1'>¥{{item.moneynum}}</p>
+          <!--金额-->
+        </view>
+      </view>
+      <p class='text38_1'>{{item.stuid}} {{item.name}}</p>
+      <!--对方学号加姓名-->
+      <!--线条-->
+      <view style='width:660rpx;border-top:1rpx solid #f4f4f4;margin:20rpx 0 0 10rpx;'></view>
+      <view class="showbackborder">
+        <view class='flex-row-sb-center'>
+          <view style='display:flex;align-items:center;'>
+            <text decode='true' class='text28_2'>还款期限:&nbsp;{{item.brrowbackdate}}</text>
+            <!--还款时间-->
+          </view>
+          <view style='display:flex;align-items:center;'>
+            <navigator url="./viewimg?path={{item.imgpath}}">
+              <image class='icon_2' mode='widthFix' src='assets/innerid-icon-4f496ecc3c04ad025371.svg' />
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+</view>
+<!------------------------------------------------------------------------->
+<!------------------------------------------------------------------------->
+<scroll-view scroll-y="true" style="height: auto; margin-top: 140rpx;"  wx:if="{{chwhich == 2}}">
+<view class="showborder" wx:for="{{brrout}}">
+  <view class='flex-column'>
+    <view class="showbrrtime">
+      <view class='flex-row-sb-start'>
+        <p class='text28'>{{item.brrowdate}}</p>
+        <!--借款时间-->
+        <p class='text28_1'>¥{{item.moneynum}}</p>
+        <!--金额-->
+      </view>
+    </view>
+    <p class='text38_1'>{{item.stuid}} {{item.name}}</p>
+    <!--对方学号加姓名-->
+    <!--线条-->
+    <view style='width:660rpx;border-top:1rpx solid #f4f4f4;margin:20rpx 0 0 10rpx;'></view>
+    <view class="showbackborder">
+      <view class='flex-row-sb-center'>
+        <view style='display:flex;align-items:center;'>
+          <text decode='true' class='text28_2'>还款期限:&nbsp;{{item.brrowbackdate}}</text>
+          <!--还款时间-->
+        </view>
+        <view style='display:flex;align-items:center;'>
+
+          <navigator url="./viewimg?path={{item.imgpath}}">
+            <image class='icon_2' mode='widthFix' src='assets/innerid-icon-4f496ecc3c04ad025371.svg' />
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+</scroll-view>
+<view style='position:relative;margin:119rpx 0 0 0;'>
+  <view class='rect'></view>
+</view>
+<!------------------------------------------------------------------------->

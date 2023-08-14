@@ -1,0 +1,133 @@
+<!--- 底层背景 --->
+<view
+  style='position:absolute;z-index:-1;top:-1167rpx;left:-1103rpx;width:2200rpx;height:1000rpx;background:#00b26a;-o-border-radius:100%;-ms-border-radius:100%;-moz-border-radius:100%;-webkit-border-radius:100%;box-sizing:border-box;'>
+</view>
+<!------------------------------------------------------------------------->
+<view style='position:relative;background:#00b26a;width:750rpx;height:160rpx;margin:0;'>
+  <view style='position:absolute;top:33rpx;left:27rpx;z-index:2;'>
+    <view
+      style='width:700rpx;height:200rpx;box-sizing:border-box;background:#FFFFFF;border-radius:8rpx;padding:40rpx 0;'>
+      <view class='flex-row-sb-start' wx:if="{{hasUserInfo == false}}">
+        <view style='width:170rpx;margin:20rpx 0 0 39rpx;padding:0;'>
+          <view class='flex-column-sb-start' bindtap="getwxinfo">
+            <p class='text32'>登录/绑定</p>
+            <p class='text24'>请完善个人信息</p>
+          </view>
+        </view>
+      </view>
+
+      <view class='flex-row-sb-start' wx:else>
+        <view style='width:200rpx;margin:20rpx 0 0 39rpx;padding:0;'>
+          <view class='flex-column-sb-start'>
+            <p class='text32'>{{userInfo.nickName}}</p>
+            <p class='text24' wx:if="{{isbind == false}}">请完善个人信息</p>
+            <p class='text24' wx:else>姓名：{{name}}　　学号：{{stuid}}</p>
+          </view>
+        </view>
+        <image mode='aspectFill'
+          style='width:120rpx;height:120rpx;border-radius:999rpx;border:5rpx solid rgb(255, 255, 255);margin:0 43rpx 0 0;'
+          src='{{userInfo.avatarUrl}}' />
+      </view>
+
+    </view>
+  </view>
+</view>
+<!------------------------------------------------------------------------->
+<view style='width:700rpx;background:#FFFFFF;border-radius:8rpx;margin:102rpx 0 0 25rpx;padding:33rpx 0 41rpx 0;'>
+  <view class='flex-column'>
+    <p class='text28'>代理进度查询</p>
+    <!-- 编辑框 -->
+    <view
+      style='width:600rpx;height:70rpx;background:#FAFAFA;color:#000;font-size:28rpx;border-radius:999rpx;box-sizing:border-box;padding:0rpx 40rpx 0rpx 40rpx;display:flex;flex-direction:row;align-items:center;margin:28rpx 0 0 41rpx;'>
+      <image class='input-icon-196469228ce69de77463' mode='widthFix'
+        src='assets/input-innerid-editbox-fbe4c415c0beed52cf13.svg' />
+      <input bindinput='eventEdit' data-var='' placeholder='输入手机号查询' placeholder-class='phc'
+        style='width:100%;height:100%;' />
+    </view>
+  </view>
+</view>
+<!------------------------------------------------------------------------->
+<view bindtap='stubind'
+  style='width:750rpx;height:90rpx;box-sizing:border-box;background:#FFFFFF;border-bottom:1rpx solid rgb(244, 244, 244);margin:27rpx 0 0 0;padding:20rpx 0;'>
+  <view class='flex-row-sb-center'>
+    <view style='display:flex;align-items:center;'>
+      <view class='flex-row-center-center' style='width:50rpx;height:50rpx;border-radius:5rpx;margin-left:32rpx;'>
+        <image class='icon' mode='widthFix' src='assets/innerid-icon-bb81c14ad6d144338918.svg' />
+      </view>
+      <p class='text30' wx:if="{{isbind == false}}">学号绑定</p>
+      <p class='text30' wx:else>学号解绑</p>
+    </view>
+    <image class='icon-arrow-more' mode='widthFix' src='assets/arrow-more.svg' />
+  </view>
+</view>
+<!------------------------------------------------------------------------->
+<view bindtap='viewiou' class="allk">
+  <view class='flex-row-sb-center'>
+    <view style='display:flex;align-items:center;'>
+      <view class='flex-row-center-center' style='width:50rpx;height:50rpx;border-radius:5rpx;margin-left:33rpx;'>
+        <image class='icon_1' mode='widthFix' src='assets/innerid-icon-bb81c14ad6d14433891822222.svg' />
+      </view>
+      <p class='text30'>我的借条</p>
+    </view>
+    <view style='display:flex;align-items:center;'>
+      <p class='text26'>借入/借出</p>
+      <image class='icon-arrow-more_1' mode='widthFix' src='assets/arrow-more.svg' />
+    </view>
+  </view>
+</view>
+<!------------------------------------------------------------------------->
+<view bindtap='goourinfo' class="allk">
+  <view class='flex-row-sb-center'>
+    <view style='display:flex;align-items:center;'>
+      <view class='flex-row-center-center' style='width:50rpx;height:50rpx;border-radius:5rpx;margin-left:33rpx;'>
+        <image class='icon_2' mode='widthFix' src='assets/innerid-icon-bb81c14ad6d1443389182222.svg' />
+      </view>
+      <p class='text30'>关于我们</p>
+    </view>
+    <image class='icon-arrow-more_1' mode='widthFix' src='assets/arrow-more.svg' />
+  </view>
+</view>
+<!------------------------------------------------------------------------->
+<view bindtap='eventDemo' class="allk">
+  <view class='flex-row-sb-center'>
+    <view style='display:flex;align-items:center;'>
+      <view class='flex-row-center-center' style='width:50rpx;height:50rpx;border-radius:5rpx;margin-left:33rpx;'>
+        <image class='icon_3' mode='widthFix' src='assets/innerid-icon-bb81c14ad6d144338918222.svg' />
+      </view>
+      <p class='text30'>我的收藏</p>
+    </view>
+    <view style='display:flex;align-items:center;'>
+      <p class='text26_1'>2张</p>
+      <image class='icon-arrow-more_1' mode='widthFix' src='assets/arrow-more.svg' />
+    </view>
+  </view>
+</view>
+<!------------------------------------------------------------------------->
+<view bindtap='leave' class="allk">
+  <view class='flex-row-sb-center'>
+    <view style='display:flex;align-items:center;'>
+      <view class='flex-row-center-center' style='width:50rpx;height:50rpx;border-radius:5rpx;margin-left:32rpx;'>
+        <image class='icon' mode='widthFix' src='assets/innerid-icon-bb81c14ad6d14433891822.svg' />
+      </view>
+      <p class='text30'>退出登录</p>
+    </view>
+    <image class='icon-arrow-more' mode='widthFix' src='assets/arrow-more.svg' />
+  </view>
+</view>
+<!------------------------------------------------------------------------->
+<view bindtap='eventDemo'
+  style='width:750rpx;height:90rpx;box-sizing:border-box;background:#FFFFFF;margin:1rpx 0 0 0;padding:20rpx 0;'>
+  <view class='flex-row-sb-center'>
+    <view style='display:flex;align-items:center;'>
+      <view class='flex-row-center-center' style='width:50rpx;height:50rpx;border-radius:5rpx;margin-left:33rpx;'>
+        <image class='icon' mode='widthFix' src='assets/innerid-icon-bb81c14ad6d144338918222222.svg' />
+      </view>
+      <p class='text30'>系统反馈</p>
+    </view>
+    <image class='icon-arrow-more_1' mode='widthFix' src='assets/arrow-more.svg' />
+  </view>
+</view>
+<!------------------------------------------------------------------------->
+<view style='position:relative;margin:25rpx 0 0 0;'>
+  <view class='rect'></view>
+</view>

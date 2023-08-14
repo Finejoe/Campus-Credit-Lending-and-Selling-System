@@ -1,0 +1,8 @@
+<!--pages/viewiou/viewimg.wxml-->
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="msg">
+            <view class="msg__text-area">
+            <image mode="aspectFit" class="img-wss" src='{{imgpath}}'></image>
+            </view>
+    </view>
+</view>

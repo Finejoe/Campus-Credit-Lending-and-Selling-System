@@ -1,0 +1,35 @@
+<!--pages/stubind/stubind.wxml-->
+<!------------------------------------------------------------------------->
+<view style='position:relative;margin:39rpx 0 0 83rpx;'>
+  <p class='text40'>绑定学号</p>
+</view>
+<!------------------------------------------------------------------------->
+<view style='position:relative;margin:23rpx 0 0 84rpx;'>
+  <p class='text28'>注意输入正确的学号与姓名，否则无法绑定</p>
+</view>
+<!------------------------------------------------------------------------->
+<view style='width:593rpx;height:104rpx;box-sizing:border-box;background:#FFFFFF;border-radius:30rpx;border:2rpx solid rgb(0, 178, 106);margin:71rpx 0 0 80rpx;padding:17rpx 0;'>
+  <view class='flex-row-start-center'>
+    <image class='icon' mode='widthFix' src='assets/innerid-icon-cfc61b2ed0e9e9f765b3.svg'/>
+    <input bindinput='stuidchange' data-var='' class='myinput_1' placeholder='学号' placeholder-class='phc_1'  />
+  </view>
+</view>
+<!------------------------------------------------------------------------->
+<view style='width:593rpx;height:104rpx;box-sizing:border-box;background:#FFFFFF;border-radius:30rpx;border:2rpx solid rgb(0, 178, 106);margin:31rpx 0 0 80rpx;padding:17rpx 0;'>
+  <view class='flex-row-start-center'>
+    <image class='icon_1' mode='widthFix' src='assets/innerid-icon-c48847a14f449e7e7ad4.svg'/>
+    <input bindinput='namechange' type="text" class='myinput_1' placeholder='姓名' placeholder-class='phc_1'  />
+  </view>
+</view>
+<!------------------------------------------------------------------------->
+<view style='width:593rpx;height:104rpx;box-sizing:border-box;background:#FFFFFF;border-radius:30rpx;border:2rpx solid rgb(0, 178, 106);margin:28rpx 0 0 80rpx;padding:17rpx 0;'>
+  <view class='flex-row-start-center'>
+    <image class='icon_1' mode='widthFix' src='assets/innerid-icon-c48847a14f449e7e7ad4.svg'/>
+    <input bindinput='pwchange' type="safe-password" class='myinput_1' placeholder='密码' placeholder-class='phc_1' />
+  </view>
+</view>
+<!------------------------------------------------------------------------->
+<view style='position:relative;margin:100rpx 0 0 75rpx;' bindtap="gotobind">
+  <view class='button'>绑定</view>
+</view>
+

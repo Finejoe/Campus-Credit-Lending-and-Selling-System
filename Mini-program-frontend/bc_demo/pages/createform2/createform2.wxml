@@ -1,0 +1,130 @@
+<!--显示借条页面，并提供签名入口！-->
+<page-meta root-font-size="system" />
+<view class="page" data-weui-theme="light">
+    <!--头部-->
+    <view class="backgroud-float">
+        <view class="weui-form">
+            <view class=" toptext">
+                借条预览 </view>
+        </view>
+        <!--借条内容-->
+        <view class="form__control-area">
+            <view class="weui-cells__group weui-cells__group_form">
+                <view class="textcss control-area">
+                    今借款人{{username1}}（学号:{{stuid1}}），向出借人{{username2}}（学号:{{stuid2}}）借款{{moneynum}}元。借款余额定于{{brrowdateYear}}年{{brrowdateMonth+1}}月{{brrowdateDate}}日前还清。
+                </view>
+                <view wx:if="{{infobk != ''}}">
+                    备注：
+                    <view class="gdsize textcss">
+                        {{infobk}}
+                    </view>
+                </view>
+                <!--下面是带有签字功能的尾部部分-->
+                <view class="pall">
+                    <view class="control-area solidhalf">
+                        <view class="hight-sol">
+                            <view>
+                            借款人:
+                            </view>
+                            <view wx:if="{{imgpath0 != ''}}" class = "imglocation" >
+                                <image mode="aspectFit" class="image_hx" src="{{imgpath0}}" bindtap="gosignature0">
+                                </image>
+                            </view>
+                            <view wx:else>
+                                <view class="weui-cells__tips" bindtap="gosignature0">点击签字</view>
+                            </view>
+                        </view>
+                        电话：{{phonenum1}}
+                    </view>
+                    <view class="control-area solidhalf">
+                        <view class="hight-sol">
+                            <view>
+                            出借人：
+                            </view>
+                            <view wx:if="{{imgpath1 != ''}}"  class = "imglocation" >
+                                <image mode="aspectFit" class="image_hx" src="{{imgpath1}}" bindtap="gosignature1">
+                                </image>
+                            </view>
+                            <view wx:else>
+                                <view class="weui-cells__tips" bindtap="gosignature1">点击签字</view>
+                            </view>
+                        </view>
+                        电话：{{phonenum2}}
+                    </view>
+                </view>
+            </view>
+
+
+            <!--日期-->
+            <view class="gdsize rightdate">
+                {{brrowdateYear}} 年{{brrowdateMonth+1}} 月{{brrowdateDate}} 日
+            </view>
+        </view>
+    </view>
+</view>
+
+<view>
+    <view class="weui-form__tips-area" bindtap="agreewitpro">
+        <label aria-role="" class="weui-agree">
+            <checkbox aria-labelledby="js_agree_txt js_agree_link" class="weui-agree__checkbox-check" />
+            <span class="weui-agree__checkbox"></span>
+            <span class="weui-agree__text">
+                <text aria-hidden="true" id="js_agree_txt">阅读并同意</text>
+            </span>
+            <navigator url="./readprotocol" id="js_agree_link">《相关条款》</navigator>
+        </label>
+    </view>
+    <view aria-hidden="{{dialog1  ? true : false}}" class="page__bd page__bd_spacing">
+        <view aria-role="button" class="weui-btn weui-btn_default" bindtap="open1">确认</view>
+    </view>
+
+
+    <!--弹窗进行最后确认！-->
+    <view class="fadeIn" wx:if="{{dialog1}}" aria-role="dialog" aria-modal="true">
+        <view class="weui-mask" bindtap="close" aria-role="button" aria-label="关闭"></view>
+        <view class="weui-half-screen-dialog">
+            <view class="weui-half-screen-dialog__hd">
+                <view class="weui-half-screen-dialog__hd__side" bindtap="close">
+                    <view aria-role="button" class="weui-icon-btn">关闭<i class="weui-icon-close-thin"></i></view>
+                </view>
+                <view class="weui-half-screen-dialog__hd__main">
+                    <strong class="weui-half-screen-dialog__title">借条生成</strong>
+                </view>
+            </view>
+            <!--这里是提示-->
+            <view class="weui-half-screen-dialog__bd" style="padding-top:32px;height:70px;">
+                即将生成借条，是否确认？
+            </view>
+            <view class="weui-half-screen-dialog__ft">
+                <view class="weui-half-screen-dialog__btn-area">
+                    <view aria-role="button" class="weui-btn weui-btn_default" bindtap="close">取消</view>
+                    <view aria-role="button" class="weui-btn weui-btn_primary" bindtap="gotocreatepro">确认</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!--表示提示条-->
+	<view aria-role="alert" class="fadeIn {{false ? 'fadeOut' : ''}}" wx:if="{{toast}}">
+		<view class="weui-mask_transparent"></view>
+		<view class="weui-toast">
+			<i class="weui-icon-success-no-circle weui-icon_toast"></i>
+			<view class="weui-toast__content">已完成</view>
+		</view>
+	</view>
+
+	<view aria-role="alert" class="fadeIn {{hideLoading ? 'fadeOut' : ''}}" wx:if="{{loading}}">
+		<view class="weui-mask_transparent"></view>
+		<view class="weui-toast">
+			<view class="weui-primary-loading weui-primary-loading_transparent weui-icon_toast">
+        <view class="weui-primary-loading__dot"></view>
+      </view>
+			<view class="weui-toast__content">加载中</view>
+		</view>
+	</view>
+</view>
+
+
+<!--用于创建借条的canvas，必须hidden才行-->
+<view class='hidecanvas'>
+<canvas canvas-id="mycanvas" style="height: 560px;width: 350px;" ></canvas>
+</view>

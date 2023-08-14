@@ -1,0 +1,33 @@
+/* pages/createform/createform.wxss */
+@import '../../weui.wxss';
+.txmessage {
+  color: red;
+}
+
+.swiper-slide {
+  height: 280px;
+}
+.toptext {
+  margin-bottom: 20rpx;
+}
+.perbot {
+  margin-bottom: 50rpx;
+}
+/* swiper 的高度设置height值即可 */
+.txtext {
+  font-size: 10px;
+  font-style: italic;
+  text-align: right;
+  float: right;
+  margin-right: 0rpx;
+  color: gray;
+}
+
+.backgroud-float {
+  /* background-color: #898989; */
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}

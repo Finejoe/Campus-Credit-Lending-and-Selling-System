@@ -1,0 +1,20 @@
+<page-meta root-font-size="system" />
+<view class="page" data-weui-theme="{{theme}}">
+    <view class="page__bd">
+        <view class="weui-article">
+            <view class="weui-article__h1">《相关协议》</view>
+            <view class="weui-article__section">
+                <view class="weui-article__h3">1. 安全性</view>
+                <view class="weui-article__p">
+                    此小程序试运行中，会将借条内容哈希值存入区块链，但并不完全保证数据不丢失。
+                </view>
+            </view>
+            <view class="weui-article__section">
+                <view class="weui-article__h3">2. 关于我们</view>
+                <view class="weui-article__p">
+                    本程序为大学生创新创业项目！
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

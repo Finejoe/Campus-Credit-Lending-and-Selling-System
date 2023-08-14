@@ -1,0 +1,34 @@
+/* pages/viewiou/viewimg.wxss */
+.img-wss{
+    width: 680rpx;
+    height: 1200rpx;
+  }
+  .page{height:100%;background-color:var(--weui-BG-2)}
+  .msg {
+    padding-top: 30px;
+    padding: calc(48px + constant(safe-area-inset-top)) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
+    padding: calc(48px + env(safe-area-inset-top)) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    text-align: center;
+    line-height: 1.4;
+    min-height: 100%;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    background-color: var(--weui-BG-2)
+}
+.msg__text-area {
+  margin-bottom: 32px;
+  padding: 0 20px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  line-height: 1.6;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto
+}

@@ -1,0 +1,57 @@
+
+@import '/utils/flex.wxss';
+
+page{background:#F1F1F1;}
+/*文本对象: 马上登录*/
+.text32{font-size:32rpx;font-weight:bold ;color:#000000;line-height:100%;margin-left:0rpx;}
+
+/*文本对象: 请完善个人信息*/
+.text24{font-size:24rpx;font-weight:normal;color:#AAAAAA;line-height:100%;margin-top:13rpx;margin-left:0rpx;}
+
+/*文本对象: 代理进度查询*/
+.text28{font-size:28rpx;font-weight:normal;color:#333333;line-height:100%;margin-left:41rpx;}
+
+/*编辑框的提示*/
+.phc{color:RGBA(0,0,0,0.3);}
+
+.input-icon-196469228ce69de77463{width:35rpx;height:auto;margin-right:10rpx;}
+
+/*SVG图标*/
+.icon{width:36rpx;height:auto;font-size:0rpx;}
+
+/*文本对象: 实名认证*/
+.text30{font-size:30rpx;font-weight:normal;color:#000000;line-height:100%;margin-left:25rpx;}
+
+/*SVG图标*/
+.icon-arrow-more{margin-right:24rpx;width:22rpx;height:auto;font-size:0rpx;}
+
+/*SVG图标*/
+.icon_1{width:32rpx;height:auto;font-size:0rpx;}
+
+/*文本对象: 点击拨打电话*/
+.text26{font-size:26rpx;font-weight:normal;color:#AAAAAA;line-height:100%;margin-right:13rpx;}
+
+/*SVG图标*/
+.icon-arrow-more_1{margin-right:23rpx;width:22rpx;height:auto;font-size:0rpx;}
+
+/*SVG图标*/
+.icon_2{width:38rpx;height:auto;font-size:0rpx;}
+
+/*SVG图标*/
+.icon_3{width:40rpx;height:auto;font-size:0rpx;}
+
+/*文本对象: 2张*/
+.text26_1{font-size:26rpx;font-weight:normal;color:#AAAAAA;line-height:100%;margin-right:12rpx;}
+
+/*SVG图标*/
+.icon_4{width:30rpx;height:auto;font-size:0rpx;}
+
+/*文本对象: 等级介绍*/
+.text26_2{font-size:26rpx;font-weight:normal;color:#AAAAAA;line-height:100%;margin-right:14rpx;}
+
+/*矩形*/
+.rect{width:750rpx;height:120rpx;background:#F4F4F4;border-radius:0rpx;box-sizing:border-box;}
+
+.allk{
+    width:750rpx;height:90rpx;box-sizing:border-box;background:#FFFFFF;border-bottom:1rpx solid rgb(244, 244, 244);margin:1rpx 0 0 0;padding:20rpx 0;
+}
